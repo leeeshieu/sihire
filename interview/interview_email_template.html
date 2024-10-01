@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Wawancara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        h1 {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Wawancara Anda</h1>
+        <p>Dear <strong>{{ applicant_name }}</strong>,</p>
+        <p></p>
+        <p>Welcome to Petrakon Indonesia! Kami mengundang Anda untuk menghadiri wawancara.</p>
+        <p>Berikut adalah jadwal yang telah ditetapan:</p>
+        <p><strong>Hari/Tanggal: {{ interview_date }}</strong></p>
+        <p><strong>Pukul: {{ start_time }} - {{ end_time }}</strong></p>
+        <p>Anda akan diwawancarai oleh <strong>{{ interviewer_name }}</strong></p>
+        <p>Kami sangat menghargai waktu Anda dan berharap wawancara ini akan menjadi langkah pertama menuju kerja sama yang produktif.</p>
+        <p></p>
+        <p>Best regards,</p>
+        <p>Petrakon Indonesia Team</p>
+        <p>Terima Kasih!</p>
+    </div>
+</body>
+</html>
